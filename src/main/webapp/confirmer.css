@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+.container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #333;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}

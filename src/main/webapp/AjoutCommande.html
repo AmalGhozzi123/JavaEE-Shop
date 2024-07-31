@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<%@ page import="dao.GestionCommande" %>
+<%@ page import="Modéle.Commande" %>
+<%@ page import="java.util.List" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter une commande</title>
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Ajouter une commande</h1>
+    <form action="ajoutcommande.dao" method="post">
+        <label for="clientId">Nom du client:</label>
+        <select name="clientId" id="clientId">
+            <%
+                List<Produit> clients = (List<Produit>) request.getAttribute("clients");
+                for (Produit client : clients) {
+            %>
+            <option value="<%= client.getId() %>"><%= client.getNom() %></option>
+            <%
+                }
+            %>
+        </select>
+        <br><br>
+        <label for="nbrProduits">Nombre de produits:</label>
+        <input type="text" name="nbrProduits" id="nbrProduits">
+        <br><br>
+        <input type="submit" value="Ajouter">
+    </form>
+</body>
+</html>

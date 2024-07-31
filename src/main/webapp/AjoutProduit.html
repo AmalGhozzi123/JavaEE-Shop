@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout client</title>
+    <link rel="stylesheet" type="text/css" href="ajout.css">
+</head>
+<body style="font-family:Georgia,serif;background-color:#F5FFFA">
+    <div class="container" >
+        <h1 style="color:#483D8B">Ajouter Client</h1>
+        <form action="ajouter.dao" method="post">
+            <div class="form-group">
+                <label>Id*</label>
+                <input type="text" name="id" style=" width:550px;height:30px;font-family:Georgia,serif" placeholder="Entrer Id" required>
+            </div>
+            <div class="form-group">
+                <label>Nom*</label>
+                <input type="text" name="nom" style="width:550px;height:30px;font-family:Georgia,serif" placeholder="Entrer Nom" required>
+            </div>
+            <div class="form-group">
+                <label>Prenom*</label>
+                <input type="text" name="prenom" style=" width:550px;height:30px;font-family:Georgia,serif" placeholder="Entrer prénom" required>
+            </div>
+            <div class="form-group">
+                <label>Numéro téléphone*</label>
+                <input type="text" name="numtlp"  style=" width:550px;height:30px;font-family:Georgia,serif" placeholder="Entrer Num de téléphone" required>
+            </div>
+            <div class="form-group">
+                <center><input type="submit" value="Ajouter" style="color:white;background-color:green;width:350px;height:40px;font-family:Georgia,serif"></center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
