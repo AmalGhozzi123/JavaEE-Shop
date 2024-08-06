@@ -1,41 +1,58 @@
-# 📞 Phone Number Location Tracker using Python
+# 📦 Java Project - Product and Order Management System
 
-## Project Description
+## 🚀 Project Overview
 
-This project demonstrates how to use the `phonenumbers` library to parse, format, and retrieve information about phone numbers. The script provides geographic location, carrier information, and time zone details for a given phone number.
+This Java project is a web-based application that manages products and orders. It leverages Java Servlets, JSP, and a MySQL database to provide functionalities for user authentication, product management, and order processing. This project is a practical example of using Servlets and JSP to create a dynamic and interactive web application.
 
 ## ✨ Features
 
-- **Parse Phone Numbers** 📱: Convert a string input into a `PhoneNumber` object.
-- **Geographic Information** 🌍: Retrieve the geographic description (location) of the phone number.
-- **Carrier Information** 🏢: Identify the carrier that originally owned the phone number.
-- **Time Zone Information** 🕒: Get a list of time zones the phone number potentially belongs to.
+- **User Authentication** 🔐: Authenticate users with login credentials.
+- **Product Management** 🛒: Add, update, delete, and display products.
+- **Order Management** 📦: Create, update, delete, and view orders.
+- **Database Integration** 🗄️: Use MySQL for data storage and retrieval.
 
 ## 🛠️ Technologies Used
 
-- **Library**: `phonenumbers` for parsing and analyzing phone numbers
-- **Language**: Python 🐍
+- **Language**: Java
+- **Web Technologies**: Servlets, JSP
+- **Database**: MySQL
+- **Database Connection**: JDBC
+
+## 📋 Prerequisites
+
+- Java 8 or higher
+- MySQL database
+- Apache Tomcat or another Java Servlet container
+- MySQL Connector/J library
 
 ## 🚀 Installation and Configuration
 
-1. **Clone the Repository**🧑‍💻
+1. **Clone the Repository**
    ```bash
-   git clone https://github.com/AmalGhozzi123/Phone_Number_Location.git
-   cd Phone_Number_Location
-2. **Install Dependencies**▶📥
-Make sure you have phonenumbers installed. You can install it using pip:
-pip install phonenumbers
-3. **Run the Script**▶️
-   python main.py
-4. **Enter a Phone Number**📝
-When prompted, enter a phone number in international format (e.g., +216 25987480, +966 50 547 3147, or +447975777666).
+   git clone https://github.com/your-username/Product-Order-Management-System.git
+   cd Product-Order-Management-System
+   
+2. **Set Up the Database**
+Create a MySQL database named bd_java2e.
+Import the SQL schema provided in the database folder.
 
-📈 Usage
-Start the script and follow the prompt to enter a phone number. The script will output:
+3. **Configure Database Connection**
+Update the SingletonConnection class with your MySQL database credentials if needed.
 
-- The parsed PhoneNumber object.📊
-- The geographic location of the phone number.🌍
-- The name of the carrier.📶
-- The time zones associated with the phone number.⏰
+4. **Deploy the Application**
+Deploy the project to your servlet container (e.g., Apache Tomcat).
 
-Feel free to use this script as a starting point for your projects involving phone number processing and analysis.🚀
+5. **Run the Application**
+Access the application through your web browser at http://localhost:8080/YourAppContext.
+## 📈 Usage
+- User Authentication: Navigate to the login page (Login.html) and use the credentials admin / admin to log in.
+- Product Management: Use the product management pages to add, view, update, and delete products.
+- Order Management: Use the order management pages to create, view, update, and delete orders.
+## 📁 Project Structure
+- Modéle: Contains model classes for Utilisateur, Produit, Commande, and database connection handling.
+- Contrôleur: Contains servlet classes for handling user interactions and managing requests and responses.
+- dao: Contains data access objects for managing product and order data.
+- webapp: Contains JSP pages and HTML forms.
+
+## 🧩 Additional Information
+Feel free to modify and extend this project to suit your needs. 
