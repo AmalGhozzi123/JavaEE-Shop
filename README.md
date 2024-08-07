@@ -55,4 +55,4 @@ Access the application through your web browser at http://localhost:8080/YourApp
 - webapp: Contains JSP pages and HTML forms.
 
 ## 🧩 Additional Information
-Feel free to modify and extend this project to suit your needs. 
+Feel free to modify and extend this project to suit your needs. If you encounter any issues or need further assistance, you can contact me at `amalghozzi@outlook.com`.
